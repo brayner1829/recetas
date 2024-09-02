@@ -1,0 +1,274 @@
+:root{
+    --fuenteheading: 'Slackey', sans-serif;
+    --fuentenav:  'Jersey 10', sans-serif;
+    --primario: #53ee0a;
+    --secundario: #0e15d0;
+    --fondo: #d0d3d7;
+    --negro: #000000;
+    --gris: #e1e1e1;
+    --blanco: #ffffff; 
+    --black: #c4ed0c;
+    --primario2 :#000000;
+    --primario1:#b6b6b4;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0 0;
+    background-color: var(--fondo);
+
+}
+
+h1{
+    font-size: 5rem;
+}
+h1 span{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.8rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+h1,h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 1.6rem;
+    background-image: linear-gradient(to top, var(--blanco) 0%, var(--primario1) 100%);
+    min-height: 50rem;
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+@media (min-width: 768px) {
+    .Header{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .no_Header {
+        display: flex;
+    }
+}
+
+
+
+.Header_barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+    }
+}
+
+.nav a{
+    color: var(--negro);
+    font-family: var(--fuentenav);
+    font-size: 2.6rem;
+    padding: 1rem 2rem;
+}
+
+@media (min-widt: 768px) {
+    .nav a{
+        padding: 1rem 2rem;
+    }
+
+    .nav a:hover{
+        background-color: var(--blanco);
+        color: var(--primario);
+        border-radius: 1rem;
+    }
+}
+
+.titulo h1{
+    color: var(--primario);
+    -webkit-text-stroke: .1rem var(--blanco);
+    font-family: var(--fuenteheading);
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+    .titulo h1{
+        margin: 3rem 0;
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: var(--blanco);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+@media (min-width: 768px) {
+    .container{
+        width: 120rem;
+    }
+}
+
+.container h2{
+    padding-top: 2rem;
+    border-radius: 30rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos del formulario */
+.formulario {
+    background-image: url(/postres/img/Captura6.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        width: 80%;
+    }
+    
+.formulario legend{
+    font-size: 2.4rem;
+}
+
+.campo input
+.campo textarea {
+    height: 20rem;
+}
+}
+
+
+.formulario{
+    background-color: rgb(16, 231, 246);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+fieldset {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 2.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: var(--primario2);
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos del pie de página */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
